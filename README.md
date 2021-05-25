@@ -21,10 +21,10 @@ In [release-it](https://github.com/release-it/release-it) config:
 
 ## Options
 
-| option         | default value  | description                                                                                                                                      |
-| -------------- | -------------- | ------------------------------------------------------------------------------------------------------------------------------------------------ |
-| filename       | `CHANGELOG.md` | File with changelogs.                                                                                                                            |
-| strictLatest   | `true`         | Entry of latest version must be present in order to get correct changelog. Set this option to `false` if you expect latest version without logs. |
-| addUnreleased  | `false`        | It leaves "Unreleased" title row if set to `true`.                                                                                               |
-| keepUnreleased | `false`        | It leaves "Unreleased" title row unchanged if set to `true`.                                                                                     |
-| addVersionUrl  | `false`        | Links the version to the according changeset.                                                                                                    |
+| option         | default value  | description                                                                                                                                      | command line option                                                                                                 |
+| -------------- | -------------- | ------------------------------------------------------------------------------------------------------------------------------------------------ | ------------------------------------------------------------------------------------------------------------------- |
+| filename       | `CHANGELOG.md` | File with changelogs.                                                                                                                            | `--plugins.@release-it/keep-a-changelog.filename=OTHER.md`                                                            |
+| strictLatest   | `true`         | Entry of latest version must be present in order to get correct changelog. Set this option to `false` if you expect latest version without logs. | `--plugins.@release-it/keep-a-changelog.strictLatest` or `--no-plugins.@release-it/keep-a-changelog.strictLatest`    |
+| addUnreleased  | `false`        | It leaves "Unreleased" title row if set to `true`.                                                                                               | `--plugins.@release-it/keep-a-changelog.addUnreleased` or `--no-plugins.@release-it/keep-a-changelog.addUnreleased`  |
+| keepUnreleased | `false`        | It leaves "Unreleased" title row unchanged if set to `true`.                                                                                     | `--plugins.@release-it/keep-a-changelog.keepUnreleased` or `--no-plugins.@release-it/keep-a-changelog.keepUnreleased`|
+| addVersionUrl  | `false`        | Links the version to the according changeset.                                                                                                    | `--plugins.@release-it/keep-a-changelog.addVersionUrl` or `--no-plugins.@release-it/keep-a-changelog.addVersionUrl`  |
